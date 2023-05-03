@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 1</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/code.js"></script>
+    <title>Visor de imagenes</title>
+  </head>
+  <body>
+    <h1>Visor de imagenes</h1>
+
+    <div class="row">
+      <div class="column left">
+        <table id="miniaturas">
+          <tr>
+            <td>
+              <img id="mario" class="miniatura" src="./img/mario.png" alt="Imagen de Mario" />
+            </td>
+            <td>
+              <img id="samus" class="miniatura" src="./img/samus.png" alt="Imagen de Samus" />
+            </td>
+            <td>
+              <img id="link" class="miniatura" src="./img/link.png" alt="Imagen de Link" />
+            </td>
+            <td>
+              <img id="fox" class="miniatura" src="./img/fox.png" alt="Imagen de Fox" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img id="pikachu" class="miniatura" src="./img/pikachu.png" alt="Imagen de Pikachu" />
+            </td>
+            <td>
+              <img id="iceClimbers" class="miniatura" src="./img/iceClimbers.png" alt="Imagen de Ice Climbers" />
+            </td>
+            <td>
+              <img id="megaman" class="miniatura" src="./img/megaman.png" alt="Imagen de Megaman" />
+            </td>
+            <td>
+              <img id="kirby" class="miniatura" src="./img/kirby.png" alt="Imagen de Kirby" />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="column right">
+        <img id="imagenDisplay" src="./img/mario.png" alt="Imagen de Mario" />
+        <figcaption id="imagenCaption">Imagen de Mario</figcaption>
+      </div>
+    </div>
+  </body>
 </html>

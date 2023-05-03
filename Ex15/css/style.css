@@ -1,0 +1,33 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+
+#miniaturas img {
+  width: 100px;
+}
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 60%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+figcaption {
+    font-size: xx-large;
+}
