@@ -16,6 +16,8 @@ for (i = 0; i < 10000; i++) {
 }
 
 console.log("Sumas de los lanzamientos");
+document.write("Sumas de los lanzamientos <br>");
 for (i = 2; i <= 12; i++) {
   console.log(i + ": " + tiradas[i]);
+  document.write(i + ": " + tiradas[i] + "<br>");
 }
