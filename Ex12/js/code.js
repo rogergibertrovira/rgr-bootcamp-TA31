@@ -43,8 +43,9 @@ let nombre = nomApe.split(" ");
 console.log(nombre[1] + "," + nombre[0]);
 
 // Elimina etiquetas script de cadena html
+let scriptRegex = /<script\b[^>]*>[\s\S]*?<\/script\b[^>]*>/g;
 let cadenaHTML =
   '<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><script src="./js/code.js"></script><title>Expresiones regulares</title></head><body></body></html>';
 
 console.log("Cadena original: " + cadenaHTML);
-console.log("Cadena sin scripts: ");
+console.log("Cadena sin scripts: " + cadenaHTML.replace(scriptRegex, ""));
